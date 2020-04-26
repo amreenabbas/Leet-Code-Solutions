@@ -38,7 +38,7 @@ letters has a length in range [2, 10000].
 letters consists of lowercase letters, and contains at least 2 unique letters.
 target is a lowercase letter.
 //created by js0805
-
+// brute force approach
 class Solution {
 public:
     char nextGreatestLetter(vector<char>& letters, char target) {
@@ -48,5 +48,15 @@ public:
                 return letters[i];
         }
         return letters[0];
+    }
+};
+// optimized using upper bound
+class Solution {
+public:
+    char nextGreatestLetter(vector<char>& letters, char target) {
+        int u = upper_bound(letters.begin(),letters.end(),target)-letters.begin();
+        if(u==letters.size())
+            u =0;
+        return letters[u];
     }
 };
