@@ -54,3 +54,19 @@ public:
         
     }
 };
+//to be discussed
+    // Binary Search: O(m lg(n)) or equivalently O(n lg(m)) - look for break point of each row / column
+        for (const vector<int>& row: grid)
+            ans += upper_bound(row.rbegin(), row.rend(), -1) - row.rbegin();
+        return ans;
+        
+        // Search Break Points: O(m + n) - traverse from upper right to lower left
+        int m(grid.size()), n(grid[0].size()), r(0), c(n - 1);
+        while (r < m) {
+            while (c >= 0 && grid[r][c] < 0) c--;
+            ans += n - c - 1;
+            r++;
+        }
+        return ans;
+    }
+};
