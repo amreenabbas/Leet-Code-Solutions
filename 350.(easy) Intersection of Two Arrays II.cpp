@@ -27,3 +27,8 @@ public:
         
     }
 };
+//created by js0805(copied)
+sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+    a.erase(set_intersection(a.begin(), a.end(), b.begin(), b.end(), a.begin()), a.end());
+    return a;
