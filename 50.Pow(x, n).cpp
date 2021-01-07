@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/powx-n/
+Question Link : https://leetcode.com/problems/powx-n/
+
 //created by js0805
+
 class Solution {
 public:
     double myPow(double x, int n) {
