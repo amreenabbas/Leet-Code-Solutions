@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
+Question Link : https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/
+
 //created by js0805
+
 class Solution {
 public:
     string generateTheString(int n) {
