@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/power-of-three/
+Question Link : https://leetcode.com/problems/power-of-three/
+
 //created by js0805
+
 class Solution {
 public:
     bool isPowerOfThree(int n) {
