@@ -1,10 +1,12 @@
-//https://leetcode.com/problems/single-number-ii/
+Question Link : https://leetcode.com/problems/single-number-ii/
+
 //created by js0805
+
 class Solution {
 public:
     int singleNumber(vector<int>& s) 
     {
-    	vector<int> t(32);////Made a array contain 32 elements.
+    	vector<int> t(32);//Made an array containing 32 elements.
     	int sz = s.size();
     	int i, j, n;
     	for (i = 0; i < sz; ++i)
