@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/nth-magical-number/
+Question Link : https://leetcode.com/problems/nth-magical-number/
+
 //created by js0805
+
 class Solution {
 public:
     int nthMagicalNumber(int N, int A, int B) {
