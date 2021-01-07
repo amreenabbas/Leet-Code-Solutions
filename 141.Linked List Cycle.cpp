@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/linked-list-cycle/
+Question Link : https://leetcode.com/problems/linked-list-cycle/
+
 //created by js0805
+
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
