@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/reverse-integer/
+Question Link : https://leetcode.com/problems/reverse-integer/
+
 //created by js0805
+
 class Solution {
 public:
    int reverse(int x) {
