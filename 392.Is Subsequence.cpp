@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/is-subsequence/
+Question Link: https://leetcode.com/problems/is-subsequence/
+
 //created by js0805
+
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
