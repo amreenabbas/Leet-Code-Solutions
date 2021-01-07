@@ -1,6 +1,8 @@
-//https://leetcode.com/problems/arranging-coins/
+Question Link : https://leetcode.com/problems/arranging-coins/
+
 //created by js0805 
 // O(N) solution
+
 class Solution {
 public:
     int arrangeCoins(int n) {
