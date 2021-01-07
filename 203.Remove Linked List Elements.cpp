@@ -1,6 +1,7 @@
-//https://leetcode.com/problems/remove-linked-list-elements/
+Question Link : https://leetcode.com/problems/remove-linked-list-elements/
+
 //created by js0805
-/**
+/*
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
