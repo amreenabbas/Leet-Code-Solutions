@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/power-of-four/
+Question Link : https://leetcode.com/problems/power-of-four/
+
 //created by js0805
+
 class Solution {
 public:
     bool isPowerOfFour(int num) {
