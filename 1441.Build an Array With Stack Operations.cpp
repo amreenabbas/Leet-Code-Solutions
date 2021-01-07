@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/build-an-array-with-stack-operations/
+Question Link : https://leetcode.com/problems/build-an-array-with-stack-operations/
+
 //created by js0805
+
 class Solution {
 public:
     vector<string> buildArray(vector<int>& target, int n) {
