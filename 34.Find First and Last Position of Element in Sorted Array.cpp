@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+Question Link : https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 //created by js0805
+
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
