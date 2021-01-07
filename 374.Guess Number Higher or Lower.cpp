@@ -1,5 +1,6 @@
-//https://leetcode.com/problems/guess-number-higher-or-lower/
+Question Link : https://leetcode.com/problems/guess-number-higher-or-lower/
 //created by js0805
+
 //Use of the workspace criterion of the binary search function.
 //     (1__2__3__4__5__6__7__8__9__10)
 // Create mid which will point to (1+10)/2 = 5
