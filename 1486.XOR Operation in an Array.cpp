@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/xor-operation-in-an-array/
+Question Link : https://leetcode.com/problems/xor-operation-in-an-array/
+
 //created by js0805
+
 class Solution {
 public:
     int xorOperation(int n, int start) {
