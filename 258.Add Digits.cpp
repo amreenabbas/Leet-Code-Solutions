@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/add-digits/submissions/
+Question Link : https://leetcode.com/problems/add-digits/submissions/
+
 //created by js0805
+
 class Solution {
 public:
     int addDigits(int n) {
