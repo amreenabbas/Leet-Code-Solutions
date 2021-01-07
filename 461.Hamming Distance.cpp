@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/hamming-distance/
+Question Link : https://leetcode.com/problems/hamming-distance/
+
 //created by js0805
+
 class Solution {
 public:
     int hammingDistance(int x, int y) {
