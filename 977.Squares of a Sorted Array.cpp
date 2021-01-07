@@ -1,6 +1,8 @@
-//https://leetcode.com/problems/squares-of-a-sorted-array/
+Question Link : https://leetcode.com/problems/squares-of-a-sorted-array/
+
 //created by js0805
 //naive-solution
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& A) {
@@ -12,7 +14,9 @@ public:
         return A;
     }
 };
+
 //better solution would be to use inline and outline
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& A) {
