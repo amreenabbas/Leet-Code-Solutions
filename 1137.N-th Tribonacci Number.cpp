@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/n-th-tribonacci-number/
+Question Link : https://leetcode.com/problems/n-th-tribonacci-number/
+
 //created by js0805
 class Solution {
 public:
