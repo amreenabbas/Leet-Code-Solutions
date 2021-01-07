@@ -1,5 +1,7 @@
-//https://leetcode.com/problems/intersection-of-two-arrays-ii/
+Question Link : https://leetcode.com/problems/intersection-of-two-arrays-ii/
+
 //created by js0805
+
 class Solution {
 public:
     vector<int> intersect(vector<int>& nums1, vector<int>& nums2) {
@@ -27,8 +29,3 @@ public:
         
     }
 };
-//created by js0805(copied)
-sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-    a.erase(set_intersection(a.begin(), a.end(), b.begin(), b.end(), a.begin()), a.end());
-    return a;
