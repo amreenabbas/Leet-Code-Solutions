@@ -1,6 +1,8 @@
-//https://leetcode.com/problems/sort-array-by-parity/
+Question Link : https://leetcode.com/problems/sort-array-by-parity/
+
 //created by js0805
 //naive solution
+
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& A) {
