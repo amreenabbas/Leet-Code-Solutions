@@ -1,4 +1,3 @@
-
 Question Link : https://leetcode.com/problems/divisor-game/
 Question : Alice and Bob take turns playing a game, with Alice starting first.
 
