@@ -1,4 +1,5 @@
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+Question link : https://leetcode.com/problems/two-sum/
+Question : Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -11,7 +12,8 @@ return [0, 1].
 
 
 
-
+//Solution by Amreen
+    
 class Solution {
 public:
     
@@ -40,6 +42,8 @@ public:
             
     }
 };
+
+Alternate solution : 
 // Solution by js0805
 
 class Solution {
