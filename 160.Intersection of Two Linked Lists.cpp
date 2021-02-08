@@ -51,3 +51,30 @@ public:
         return NULL;
     }
 };
+
+//Solution by Amreen
+
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode *p1=headA,*p2=headB;
+        int it = 0;
+        if(p1 == NULL || p2 == NULL)
+            return NULL;
+        while(p1!=p2 && it<3)
+        {
+            p1 = p1->next;
+            p2 = p2->next;
+            if(p1 == NULL){
+                p1 = headB;
+                it++;}
+            if(p2 == NULL)
+                p2 = headA;
+            if(p1==p2)
+                return p1;
+        }
+        if(it>=2)
+            return NULL;
+        return p1;
+    }
+};
