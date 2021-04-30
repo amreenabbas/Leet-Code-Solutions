@@ -49,3 +49,42 @@ public:
     }
 };
 
+//Alternate solution by Amreen
+
+class WordDictionary {
+public:
+    
+    unordered_map<int,vector<string>> map;
+    WordDictionary() {
+        
+    }
+    
+    void addWord(string word) {
+        int n = word.length();
+        map[n].push_back(word);
+    }
+    
+    bool search(string word) {
+        int l = word.length();
+        auto dict = map[l];
+        for(string w:dict)
+        {
+            bool flag = true;
+            int pos = 0;
+            for(char c:w)
+            {
+                if(c!=word[pos] && word[pos] != '.')
+                {
+                    flag = false;
+                    break;
+                }    
+                pos++;
+            }
+            if(flag)
+                return flag;
+        }
+        return false;
+    }
+    
+};
+
