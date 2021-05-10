@@ -17,3 +17,25 @@ public:
         return arr[N];
     }
 };
+
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    int climbStairs(int n) {
+        int i;
+        if(n==1)
+            return 1;
+        int v2 = 1;
+        int v1 = 2;
+        int steps;
+        for(i=3;i<=n;i++)
+        {
+            steps = v1+v2;
+            v2 = v1;
+            v1 = steps;
+        }
+        return v1;
+    }
+};
