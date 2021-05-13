@@ -44,3 +44,45 @@ public:
         
     }
 };
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    vector<int> decrypt(vector<int>& code, int k) {
+        int i,n=code.size(),j=0;
+        vector<int>ans(n,0);
+        if(k==0)
+            return ans;
+        if(k>0)
+        {
+            int sum=0;
+            for(i=1;i<=k;i++)
+                sum+=code[i];
+            ans[0]=sum;
+            for(i=1;i<n;i++)
+            {
+                sum = sum-code[i]+code[(i+k)%n];
+                ans[i] = sum;
+            }
+        }
+        else
+        {
+            int sum=0;
+            k=-k;
+            for(i=n-1;i>=n-k;i--)
+                sum+=code[i];
+            ans[0]=sum;
+            for(i=n-1;i>0;i--)
+            {
+                if(i-k>=0)
+                    sum = sum-code[i]+code[(i-k)%n];
+                else
+                    sum = sum-code[i]+code[(i-k+n)%n];
+                ans[i] = sum;
+            }
+        }
+        return ans;
+        
+    }
+};
