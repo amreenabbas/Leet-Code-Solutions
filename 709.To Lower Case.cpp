@@ -15,3 +15,20 @@ public:
         return str;
     }
 };
+
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    string toLowerCase(string str) {
+        string ans="";
+        for(char ch:str)
+        {
+            if(ch>=65 && ch<=90)
+                ch+=32;
+            ans+=ch;
+        }
+        return ans;
+    }
+};
