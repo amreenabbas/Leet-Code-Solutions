@@ -20,3 +20,20 @@ public:
         return ans;
     }
 };
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    int heightChecker(vector<int>& heights) {
+        int c=0,i,n=heights.size();
+        vector<int>sorted(heights.begin(),heights.end());
+        sort(sorted.begin(),sorted.end());
+        for(i=0;i<n;i++)
+        {
+            if(sorted[i]!=heights[i])
+                c++;
+        }
+        return c;
+    }
+};
