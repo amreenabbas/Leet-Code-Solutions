@@ -30,3 +30,22 @@ public:
         return maxd;
     }
 };
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    int binaryGap(int n) {
+        int i,j=-1,maxd=0;
+        for(i=0;i<32;i++)
+        {
+            if(((n>>i)&1)>0)
+            {
+                if(j>=0)
+                   maxd = max(maxd,i-j);
+                j=i; 
+            }   
+        }
+        return maxd;
+    }
+};
