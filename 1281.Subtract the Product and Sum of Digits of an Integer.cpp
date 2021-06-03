@@ -17,3 +17,20 @@ public:
         return j;
     }
 };
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        long p=1,s=0;
+        while(n>0)
+        {
+            int r=n%10;
+            p=p*r;
+            s+=r;
+            n/=10;
+        }
+        return p-s;
+    }
+};
