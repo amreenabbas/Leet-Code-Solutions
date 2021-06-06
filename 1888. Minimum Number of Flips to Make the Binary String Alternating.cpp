@@ -32,3 +32,28 @@ public:
         return ans;
     }
 };
+
+//Alternate solution by Amreen
+
+class Solution {
+public:
+    int minFlips(string s) {
+        int i,n=s.length();
+        vector<vector<int>>cnt(2,vector<int>(2,0));
+        for(i=0;i<n;i++)
+            cnt[s[i]-'0'][i%2]++;
+        int c1,c2,ans;
+        c1 = cnt[0][0]+cnt[1][1];
+        c2 = cnt[0][1]+cnt[1][0];
+        ans=min(c1,c2);
+        for(i=0;i<n;i++)
+        {
+            cnt[s[i]-'0'][i%2]--;
+            cnt[s[i]-'0'][(n+i)%2]++;
+            c1=cnt[0][0]+cnt[1][1];
+            c2 = cnt[0][1]+cnt[1][0];
+            ans=min({ans,c1,c2});
+        }
+        return ans;
+    }
+};
