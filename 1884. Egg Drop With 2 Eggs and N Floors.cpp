@@ -1,0 +1,1 @@
+//created by js0805class Solution {public:    int twoEggDrop(int n) {        int skip=1,ans=0;        while(n>0){            n-=skip;            skip++;            ans++;                    }        return ans;    }};
