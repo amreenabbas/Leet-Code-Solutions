@@ -9,3 +9,5 @@ public:
         return sol;
     }
 };
+
+//try using O(N) & O(1) by swapping indexes for both together
