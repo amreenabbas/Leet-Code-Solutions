@@ -16,15 +16,11 @@ public:
             if(arr[i]%2==0 ){
                 eans = eans + arr[i];
             }
-            else if(arr[i]>2){
+            else{
                 eans = eans + arr[i]-1;
                 oans++;
             }
-            else{
-                oans++;
-            }
         }
-        cout << eans << " "<< oans << " ";
         if(oans!=0){
             eans = eans + 1;
         }
